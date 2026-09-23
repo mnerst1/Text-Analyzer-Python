@@ -4,7 +4,9 @@
 
 This project was created as **Day 004** of my **365 Days of Code** challenge.
 
-<img width="570" height="760" alt="{2F904676-2C86-49FB-997D-63CE745CC7EC}" src="https://github.com/user-attachments/assets/4d37b060-896b-4e62-9cd1-cf56cd1307aa" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4d37b060-896b-4e62-9cd1-cf56cd1307aa" width="350" alt="Text Analyzer Preview">
+</p>
 
 
 ---

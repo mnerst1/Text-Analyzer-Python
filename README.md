@@ -1,8 +1,6 @@
-# 🐍 Text Analyzer — Python
+# Day 004 — Text Analyzer — Python
 
 **Text Analyzer** is a simple but practical Python application that reads a text file, analyzes its contents, and displays useful statistics.
-
-This project was created as **Day 004** of my **365 Days of Code** challenge.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4d37b060-896b-4e62-9cd1-cf56cd1307aa" width="350" alt="Text Analyzer Preview">

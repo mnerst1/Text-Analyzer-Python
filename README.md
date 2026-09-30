@@ -2,6 +2,10 @@
 
 **Text Analyzer** is a simple but practical Python application that reads a text file, analyzes its contents, and displays useful statistics.
 
+Word counting and search normalize Unicode spelling and case. `don't` and `don’t` share a count, as do composed and decomposed accented words. Internal apostrophes and single hyphens are retained; underscores and repeated hyphens separate words.
+
+Run regression tests with `python -m unittest discover -v` (no additional dependencies).
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4d37b060-896b-4e62-9cd1-cf56cd1307aa" width="350" alt="Text Analyzer Preview">
 </p>

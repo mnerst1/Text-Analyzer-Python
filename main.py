@@ -1,4 +1,10 @@
 import re
+import unicodedata
+
+
+def normalize_text(text):
+    """Normalize equivalent Unicode spelling and curly apostrophes."""
+    return unicodedata.normalize("NFC", text).casefold().replace("’", "'")
 
 
 def read_file(filename):
@@ -20,9 +26,9 @@ def get_words(text):
     Превращает обычный текст в список слов.
     """
 
-    text = text.lower()
+    text = normalize_text(text)
 
-    words = re.findall(r"\b[\w'-]+\b", text, flags=re.UNICODE)
+    words = re.findall(r"[^\W_]+(?:['-][^\W_]+)*", text, flags=re.UNICODE)
 
     return words
 
@@ -133,9 +139,9 @@ def search_word(word_frequency):
     """
 
     print()
-    word = input(
+    word = normalize_text(input(
         "Enter a word to search: "
-    ).strip().lower()
+    ).strip())
 
     count = word_frequency.get(
         word,
